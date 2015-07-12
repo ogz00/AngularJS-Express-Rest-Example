@@ -14,6 +14,6 @@ Basic AngularJS application working with Express server via RESTApi
 2. Go to *[http://localhost:8080/index.html#/](http://localhost:8080/index.html#/)* to test it. 
  * If you want to explore the REST responses open ypur browser's developer tool and see XHR responses.
 
- * Have a fun :)
+
 
 
