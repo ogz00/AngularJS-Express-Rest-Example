@@ -1,0 +1,61 @@
+<!doctype html>
+<html data-ng-app>
+
+<head>
+    <title>Using Directives</title>
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<!--
+ng-cloak
+ng-switch
+ng-class
+ng-showw
+-->
+
+<body ng-init="data={name:'Oguzhan', isVisible:true, loggedIn:true, status:'navy'}">
+<div ng-cloak>
+    <div ng-switch on="data.loggedIn">
+        <div ng-switch-when="true" ng-class="data.status">
+            Welcome {{data.name}}
+        </div>
+        <div ng-switch-default ng-class="data.status">Login</div>
+    </div>
+    <br/>
+
+    <div ng-show,="data.isVisible">
+        Name:
+        <input type="text" ng-model="data.name"/> &nbsp; {{data.name}}
+        <!--<span ng-bind="name"></span> -->
+    </div>
+    <!-- Hide:
+    <input type="checkbox" ng-model="isHidden" />
+    <br />
+    <button ng-click="name ='Oguzhan'">Change Name</button> -->
+    <div ng-init="people=[{name:'John', city:'LA'},
+                               {name:'Tina', city:'NY'},
+                               {name:'Adam', city:'FLO'},]">
+        <h3>Iterating through data with ng-repeat</h3>
+        <ul>
+            <li ng-repeat="person in people">{{person.name + ' Lives in ' + person.city}}</li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>City</td>
+            </tr>
+            <tr ng-repeat="person in people | orderBy:'city'">
+                <td>{{person.name}}</td>
+                <td>{{person.city}}</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+<script src="../../scripts/angular.min.js"></script>
+</body>
+
+
+</html>
