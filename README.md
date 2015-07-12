@@ -4,6 +4,10 @@ Basic AngularJS application working with Express server via RESTApi
 
 #Run This Project
 ---------------------------------------------------------------------------------------------------------------------
+#Requirements
+ - NodeJS
+ - WebBrowser
+
 1. Clone the codes.
 
   * https://github.com/ogz00/AngularJS-Express-Rest-Example.git
