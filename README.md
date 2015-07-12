@@ -1,10 +1,15 @@
 # AngularJS-Express-Rest-Example
 
-Basic AngularJS application working with Express server via RESTApi
+- MV* Design
+- Simple **AngularJS** Application
+- Basic **Express** Configuration
+- **RESTApi Fundamentals**
 
-#Run This Project
+Starter Level AngularJS application working with Express server via RESTApi
+
+##Run This Project
 ---------------------------------------------------------------------------------------------------------------------
-#Requirements
+###Requirements
  - NodeJS
  - WebBrowser
 
