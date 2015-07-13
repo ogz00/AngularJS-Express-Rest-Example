@@ -1,20 +1,23 @@
 <h2>{{appSettings.title}}</h2>
 Filter Name : <input type="text" ng-model="customerFilter.name"/>
 <br/><br/>
-<table>
+<table class="table table-striped">
     <tr>
         <th ng-click="doSort('name')">Name</th>
         <th ng-click="doSort('city')">City</th>
         <th ng-click="doSort('orderTotal')">Order Total</th>
         <th ng-click="doSort('joined')">Joined</th>
-        <th>&NonBreakingSpace;</th>
+        <th>Orders</th>
+        <th>&NonBreakingSpace;&NonBreakingSpace;</th>
     </tr>
-    <tr ng-repeat="cust in  customers | limitTo:25 | filter:customerFilter| orderBy:sortBy:reverse">
+    <tr ng-repeat="cust in  customers | filter:customerFilter| orderBy:sortBy:reverse">
         <td>{{cust.name | uppercase}}</td>
         <td>{{cust.city | uppercase}}</td>
         <td>{{cust.orderTotal | currency}}</td>
         <td>{{cust.joined | date: 'dd/MM/yyyy'}}</td>
         <td><a href="#/orders/{{cust.id}}">View Orders</a></td>
+        <td class="center"><span class="glyphicon glyphicon-remove delete" ng-click="deleteCustomer(cust.id)"></span>
+        </td>
     </tr>
 </table>
 <br/>

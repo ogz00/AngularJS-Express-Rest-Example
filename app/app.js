@@ -1,12 +1,6 @@
 /**
  * Created by oguzhan on 12.07.2015.
  */
-
-
-//option 0
-//angular.module('customerApp',[]);
-
-
 //option 0 -1
 (function () {
     var customerApp = angular.module('customerApp', ['ngRoute']);
@@ -36,6 +30,12 @@
             {
                 controller: 'OrderController',
                 templateUrl: 'app/views/orders.html'
+
+            })
+            .when('/orders',
+            {
+                controller: 'AllOrdersController',
+                templateUrl: 'app/views/allorders.html'
 
             })
             .otherwise({redirectTo: '/'});
