@@ -30,18 +30,34 @@ ng\\:form {
     position: absolute;
 }
 
-table a {
-    text-decoration: none;
-
+body {
+    overflow: hidden;
 }
-table td,th{
+
+th {
     text-align: left;
-    border: solid #101010 thin;
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+tr.footer {
+    background-color: #efefef;
+}
+
+main {
+    margin-left: 12px;
+    margin-right: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
 }
 
 
-a {
-    text-decoration: none;
-    font-family: Arial;
-    color: #204d74;
-}
+
+

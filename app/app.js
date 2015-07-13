@@ -3,7 +3,7 @@
  */
 //option 0 -1
 (function () {
-    var customerApp = angular.module('customerApp', ['ngRoute']);
+    var customerApp = angular.module('customerApp', ['ngRoute', 'ngAnimate']);
 
     customerApp.config(function ($routeProvider) {
         $routeProvider
