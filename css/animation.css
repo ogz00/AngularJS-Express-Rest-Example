@@ -16,6 +16,7 @@
 .slide-animation.ng-enter.ng-enter-active {
     left:0;
     opacity:1;
+    
 }
 
 .slide-animation.ng-leave {
